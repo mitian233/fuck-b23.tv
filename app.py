@@ -25,14 +25,14 @@ def getUrlGUI():
     if request.method == 'POST':
         print(1)
         url = request.form['url']
-        if not "http" in url:
+        if not url.startswith('http'):
            url = "https://" + url
         genUrl = getB23Url(url)
         return genUrl
     else:
         print(2)
         url = request.args.get('url')
-        if not "http" in url:
+        if not url.startswith('http'):
            url = "https://" + url
         genUrl = getB23Url(url)
         return genUrl
