@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, render_template, request, session
+from flask import Flask, redirect, render_template, request
 from urllib.parse import urlparse
 import requests
 
