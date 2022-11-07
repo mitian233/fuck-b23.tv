@@ -1,4 +1,4 @@
-from flask import Flask,redirect,url_for,render_template,request,session
+from flask import Flask, redirect, url_for, render_template, request, session
 from urllib.parse import urlparse
 import requests
 
@@ -38,4 +38,4 @@ def getUrlGUI():
         return genUrl
 
 if __name__ == '__main__':
-    app.run(port=5746, debug=False)
+    app.run()
